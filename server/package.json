@@ -2,11 +2,12 @@
   "name": "inputscrub-server",
   "version": "1.0.0",
   "description": "inputscrub server",
-  "main": "index.ts",
+  "main": "server.ts",
   "scripts": {
     "tsnode": "ts-node server.ts",
     "initdb": "ts-node utils/initPostgres.ts",
-    "popdb": "ts-node utils/popdb.ts"
+    "popdb": "ts-node utils/popdb.ts",
+    "test": "jest tests/Snippet.test.ts"
   },
   "keywords": [],
   "author": "Anson Lee",
@@ -21,9 +22,14 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@jest/globals": "^29.5.0",
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
     "@types/node": "^18.15.11",
+    "@types/supertest": "^2.0.12",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.3"
   }

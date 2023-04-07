@@ -8,7 +8,7 @@ import { RouteButton } from '../components/RouteButton';
 export const Navbar = () => {
   return (
     <NavbarContainer>
-      <RouteButton text='userauth webapp' href='/' />
+      <RouteButton text='inputscrub webapp' href='/' />
       <Stretcher />
     </NavbarContainer>
   )
@@ -25,6 +25,7 @@ export const NavbarContainer = styled.div`
   color: ${COLORS.text}
 `;
 
+/** Components after the stretcher get stuck to the right end of the navbar */
 const Stretcher = styled.div`
   flex-grow: 1;
-`
+`;

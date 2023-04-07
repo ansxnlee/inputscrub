@@ -1,11 +1,14 @@
-import '../css/App.css';
+import { ViewContainer, BodyContainer } from '../components/Containers';
+import { Navbar } from '../components/Navbar';
+import { Snippets } from '../components/Snippets';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      hi
-    </div>
+    <ViewContainer>
+      <Navbar />
+      <BodyContainer>
+        <Snippets />
+      </BodyContainer>
+    </ViewContainer>
   );
 }
-
-export default App;

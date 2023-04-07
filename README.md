@@ -1,7 +1,7 @@
 # inputscrub
 Sandbox for testing input validation on api endpoints and react input fields with [zod](https://github.com/colinhacks/zod).
 
-Core input validation is done server-side to prevent illegal data from being parsed by mikroORM. Validation on the client will mostly be for ease of use for users.
+Core input validation is done server-side to prevent illegal data from being parsed by mikroORM. Validation on the client will mostly be for user ease of use.
 
 dependencies
 ---

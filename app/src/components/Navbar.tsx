@@ -9,6 +9,7 @@ export const Navbar = () => {
   return (
     <NavbarContainer>
       <RouteButton text='inputscrub webapp' href='/' />
+      <RouteButton text='Create New Snippet' href='/create' border={true} />
       <Stretcher />
     </NavbarContainer>
   )

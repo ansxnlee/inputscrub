@@ -8,6 +8,7 @@ export interface RouteButtonProps {
 
 /** Snippet Entity Type */
 export interface SnippetProps {
+  id: number;
   text: string;
   sign: string;
 }

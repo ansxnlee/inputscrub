@@ -17,7 +17,7 @@ export const Snippets = () => {
   return(
     <SnippetList>
       {snips.map(snip => (
-        <SnippetContainer>
+        <SnippetContainer key={snip.id}>
           {snip.text}
           <SnippetSignWrapper>
             <Stretcher />
@@ -45,7 +45,7 @@ const SnippetContainer = styled.div`
   flex-direction: column;
   align-items: center;
   border: solid;
-  border-color: ${COLORS.text};
+  border-color: ${COLORS.inputHighlight};
   border-radius: 5px;
   border-width: thin;
 `;

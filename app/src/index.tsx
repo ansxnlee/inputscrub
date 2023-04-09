@@ -7,6 +7,7 @@ import {
 import './css/index.css';
 import { App } from './pages/App';
 import { Error } from './pages/Error';
+import { Create } from './pages/Create';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error />
   },
+  {
+    path: '/create',
+    element: <Create />
+  }
 ]);
 
 const root = ReactDOM.createRoot(

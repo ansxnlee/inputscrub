@@ -10,13 +10,11 @@ export const getSnippets = async () => {
   }
 }
 
-export const login = async (username: string, password: string) => {
+export const createSnippet = async (text: string, sign: string) => {
   try {
-    const res = await axios.post(URL.domain + '/user/login', {
-      username: username,
-      password: password
-    }, { 
-      withCredentials: true 
+    const res = await axios.post(URL.domain + '/', {
+      text: text,
+      sign: sign
     });
     return res;
   } catch (e) {

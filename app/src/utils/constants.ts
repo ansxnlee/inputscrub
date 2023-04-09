@@ -11,3 +11,7 @@ export const COLORS = {
   inputHighlight: '#F58E00',
   buttons: '#B36800'
 }
+
+export const InputProps = {
+  snippetTextAreaMax: 200
+}

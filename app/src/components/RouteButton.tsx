@@ -18,6 +18,7 @@ export const RouteButton = ({ text, href, border }: { text?: string, href?: stri
 
 const Button = styled.button<RouteButtonProps>`
   padding: 6px 8px 6px 8px;
+  margin: 0px 10px 0px 10px;
   background-color: ${COLORS.navbg};
   border: ${(props) => (props.border ? 'solid' : 'none' )};
   border-color: ${COLORS.text};

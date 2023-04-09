@@ -16,3 +16,11 @@ Ideally, the mikroORM amd express router setups are all done within `./app.ts` b
 
 My solution to this problem is to setup middleware directly in `./server.ts` which may be unintuitive.
 The individual jest files will need to also do these same setups for them to work properly. 
+
+Possible improvements
+---
+- there are 2 sources of truth for zod validation schemas. we can define 1 and import the other in some way but coupling between the app/server will increase as a result
+- i should follow html semantics more and resist the urge to make everything a div for the sake of user accessibiity
+- i got lazy piping zod validation errors into custom components that can be displayed on the webapp so maybe i should just use something like formik instead
+- I'm practically using pure css to style my compoennts so maybe I should get rid the overhead from emotionJS and just start writing raw css files instead
+- it might be worthwhile to separate mikroORM logic from server controllers into it's own middleware functions which increases overall complexity but makes unit testing more efficient
